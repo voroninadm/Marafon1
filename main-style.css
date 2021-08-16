@@ -1,0 +1,23 @@
+.page-header {
+    display: grid;
+    grid-template-rows: 60px;
+    margin-top: 27px;
+    border-top: 1px solid #AE7C78;
+    border-bottom: 1px solid #AE7C78;
+    font-family: Montserrat;
+    font-weight: 400;
+    align-items: center;
+}
+
+.main-nav{
+    margin:0;
+    display:flex;
+    justify-content: space-around;
+    align-items:  center;
+    list-style-type: none;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: #AE7C78;
+}
