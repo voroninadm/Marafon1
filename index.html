@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Авторские букеты с доствакой по всему Питеру">
+    <meta name="keywords" content="букеты, цветы, авторские, оригинальные, доставка, Питер, Санкт-Петербург">
     <title>Авторские букеты в Петербурге</title>
     <link rel="stylesheet" href="main-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,11 +14,11 @@
 <body>
 <header class="page-header">
     <nav>
+        <a href="#"><img src="img/logo_svg.svg" alt="to main page" width="100" height="33"></a>
         <ul class="main-nav">
             <li><a href="#">Каталог</a> </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">Отзывы</a></li>
-            <li><a href="#"><img src="img/logo_svg.svg" alt="to main page" width="100" height="33"></a></li>
             <li><a href="#">Спецпредложения</a></li>
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Корзина</a></li>
@@ -24,133 +26,146 @@
     </nav>
 </header>
 <main>
-    <section>
-        <h1>Авторские букеты в Петербурге</h1>
+
+    <section class="start-container">
+        <h1>Авторские букеты <span>в Петербурге</span></h1>
         <p>Оригинальные свежие букеты с доставкой по всему городу</p>
         <a href="#">Смотреть каталог</a>
         <img src="img/flower1.png" alt="pink bouquet" width="386" height="388">
         <img src="img/flowers2.png" alt="white-pink roses bouquet" width="387" height="404">
     </section>
+
     <section class="benefits">
-        <ul>
-        <li class="delivery">
+        <h2 class="visually-hidden">Наши приемущества</h2>
+        <dl>
+            <dt>Быстрая доставка</dt>
+            <dd>Можем собрать букет и передать его в доставку всего за час.</dd>
+            <dt>Всегда всежие цветы</dt>
+            <dd>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</dd>
+            <dt>Отправляем фото цветов</dt>
+            <dd>Перед доставкой сделаем фотографию букета и отправим вам.</dd>
             <img src="img/delivery_icon.svg" alt="fast-car" width="82" height="52">
-            <p>Быстрая доставка</p>
-            <p>Можем собрать букет и передать его в доставку всего за час.</p>
-        </li>
-        <li class="freshness">
             <img src="img/flower_icon.svg" alt="flower-in-vase" width="52" height="52">
-            <p>Всегда всежие цветы</p>
-            <p>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
-        </li>
-        <li class="photo-making">
             <img src="img/photo_icon.svg" alt="camera" width="59" height="52">
-            <p>Отправляем фото цветов</p>
-            <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
-        </li>
-        </ul>
+        </dl>
     </section>
-    <section class="popular-carousel">
+
+    <section class="popular-slider">
         <h2>Популярные букеты</h2>
         <div class="card">
-            <p>Букет «Нежность»</p>
+            <h3>Букет «Нежность»</h3>
             <p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
             <p>30 × 40 см</p>
             <p>3600 руб.</p>
+            <a href="#">Заказать</a>
             <img src="img/bouquet.png" alt="boquete of white roses" width="387" height="438">
         </div>
+        <div class="slider_controls">
+            <button type="button">
+                <span class="visually-hidden">Назад</span>
+            </button>
+            <button type="button">
+                <span class="visually-hidden">Вперёд</span>
+            </button>
     </section>
+
     <section class="catalog">
-        <div class="wedding-bouquet">
+        <h2 class="visually-hidden">Каталог</h2>
+        <article class="wedding-bouquet">
             <h3>Свадебные букеты</h3>
             <p>Букеты для невест</p>
-        </div>
-        <div class="pion-bouquet">
+        </article>
+        <article class="pion-bouquet">
             <h3>Букеты с пионами</h3>
             <p>Букеты с сезонными пионами</p>
-        </div>
-        <div class="choose_bouquet">
+        </article>
+        <article class="choose_bouquet">
             <h3>Выбрать букет</h3>
             <p>Букеты в ассортименте</p>
-        </div>
+        </article>
     </section>
+
     <section class="discount">
+        <h2 class="visually-hidden">Скидки</h2>
         <p>Скидка 10% на первый заказ</p>
         <p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
     </section>
+
     <section class="steps">
-        <p>4 шага к идеальному букету</p>
-        <ul>
-            <li>
-                <img src="img/1.svg" alt="computer" width="67" height="52">
-                <p>Заказ</p>
-                <p>Выбирите понравившейся букет из каталога и оформите заказ</p>
-            </li>
-            <li>
-                <img src="img/2.svg" alt="operator" width="38" height="52">
-                <p>Уточнение деталей</p>
-                <p>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
-            </li>
-            <li>
-                <img src="img/3.svg" alt="credit card" width="70" height="52">
-                <p>Оплата</p>
-                <p>Оплатить заказ можно онлайн на сайте или при получении</p>
-            </li>
-            <li>
-                <img src="img/4.svg" alt="fast_truck" width="83" height="52">
-                <p>Доставка</p>
-                <p>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
-            </li>
-        </ul>
+        <h2>4 шага к идеальному букету</h2>
+        <dl>
+                <dt>Заказ</dt>
+                <dd>Выбирите понравившейся букет из каталога и оформите заказ</dd>
+                <dt>Уточнение деталей</dt>
+                <dd>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</dd>
+                <dt>Оплата</dt>
+                <dd>Оплатить заказ можно онлайн на сайте или при получении</dd>
+                <dt>Доставка</dt>
+                <dd>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
+        </dl>
+        <img src="img/1.svg" alt="computer" width="67" height="52">
+        <img src="img/2.svg" alt="operator" width="38" height="52">
+        <img src="img/3.svg" alt="credit card" width="70" height="52">
+        <img src="img/4.svg" alt="fast_truck" width="83" height="52">
     </section>
+
     <aside class="news">
-        <p>Следите за нашими новостями</p>
+        <h2>Следите за нашими новостями </h2>
         <p>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
         <figure>
             <img src="img/news1.png" alt="green-pinr bouquet" width="285" height="220">
             <img src="img/news2.png" alt="pink-white bouquet" width="285" height="220">
             <img src="img/news3.png" alt="pink bouquet in craft paper" width="387" height="460">
-            <figcaption>Букеты-новинки</figcaption>
+            <figcaption class="visually-hidden">Букеты-новинки</figcaption>
         </figure>
+        <a href="#" class="visually-hidden">instagram</a>
+        <a href="#" class="visually-hidden">facebook</a>
+        <a href="#" class="visually-hidden">twitter</a>
     </aside>
+
     <section class="comments">
-        <h3>Отзывы</h3>
-        <ul>
-            <li>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!<br>Марина</li>
-            <li>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!<br>Татьяна</li>
-            <li>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!<br>Ольга</li>
-        </ul>
+        <h2>Отзывы</h2>
+        <blockquote>
+            <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
+            <cite>Марина</cite>
+        </blockquote>
+        <blockquote>
+            <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
+            <cite>Татьяна</cite>
+        </blockquote>
+        <blockquote>
+            <p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
+            <cite>Ольга</cite>
+        </blockquote>
     </section>
+
     <section class="map">
-        <h4>Мы ждем вас</h4>
+        <h2>Мы ждем вас</h2>
         <img src="img/map.jpg" alt="Ждем Вас по адресу Санкт-Петербург, ул. Большая Конюшенная, 19" width="1440" height="645">
-        <ul>
-            <li>Приходите к нам:</li>
-            <li>Санкт-Петербург, ул. Большая Конюшенная, 19</li>
-            <li>Режим работы:</li>
-            <li>Пн-Вск, с 9-00 до 20-00</li>
-            <li>Позвоните нам:</li>
-            <li><a href="tel:+88129834719">+ 7 (812) 983-47-19</a></li>
-            <li>Напишите нам:</li>
-            <li><a href="mailto:info@botanika.ru">info@botanika.ru</a></li>
-        </ul>
+            <p>Приходите к нам:</p>
+            <p>Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+            <p>Режим работы:</p>
+            <p>Пн-Вск, с 9-00 до 20-00</p>
+            <p>Позвоните нам:</p>
+            <p><a href="tel:+88129834719">+ 7 (812) 983-47-19</a></p>
+            <p>Напишите нам:</p>
+            <p><a href="mailto:info@botanika.ru">info@botanika.ru</a></p>
     </section>
 </main>
+
 <footer>
+    <a href="#"><img src="img/logo_footer.svg" alt="logo" width="100" height="33"></a>
     <ul>
-        <li><a href="#"><img src="img/logo_footer.svg" alt="logo" width="100" height="33"></a></li>
         <li><a href="#">Каталог</a> </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">Отзывы</a></li>
         <li><a href="#">Спецпредложения</a></li>
         <li><a href="#">Контакты</a></li>
         <li><a href="#">Корзина</a></li>
-        <li>
-            <img src="img/instagram_icon.svg" width="21" height="20">
-            <img src="img/facebook_icon.svg" width="12" height="20">
-            <img src="img/twitter_icon.svg"  width="26" height="20">
-        </li>
     </ul>
-</footer>
+    <a href="#" class="visually-hidden">instagram</a>
+    <a href="#" class="visually-hidden">facebook</a>
+    <a href="#" class="visually-hidden">twitter</a>
+
 </body>
 </html>

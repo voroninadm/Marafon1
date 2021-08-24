@@ -1,15 +1,27 @@
-.page-header {
+.visually-hidden{ /* Ниндзя-класс*/
+    display: none;
+}
+
+.page-header { /*Разметка и стили шапки страницы */
     display: grid;
     grid-template-rows: 60px;
     margin-top: 27px;
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
+
     font-family: Montserrat;
     font-weight: 400;
     align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #AE7C78;
 }
 
-.main-nav{
+.main-nav{ /* Разметка блока навигации */
     margin:0;
     display:flex;
     justify-content: space-around;
@@ -17,7 +29,246 @@
     list-style-type: none;
 }
 
-.main-nav a{
+.main-nav a{ /* Стиль ссылок в навигации*/
     text-decoration: none;
     color: #AE7C78;
+
+}
+
+.start-container{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #AE7C78;
+}
+
+.start-container h1{ /*Главный заголовок */
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+    color: #AE7C78;
+}
+.start-container span{ /* курсивная часть заголовка*/
+    font-style: italic;
+}
+h2{ /* Стили для всех заголовков h2*/
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #AE7C78;
+   }
+
+.steps dt,
+.benefits dt{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#AE7C78;
+
+}
+.steps dd,
+.benefits dd{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#AE7C78;
+}
+
+.popular-slider h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #AE7C78;
+}
+
+.popular-slider p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+}
+.popular-slider p:last-of-type {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #AE7C78;
+}
+.catalog h3{
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: black;
+    /*color:#FFFFFF;*/
+}
+
+.catalog p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    /*color: #FFFFFF;*/
+}
+
+.discount p{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+}
+.discount p:last-of-type{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+/*
+.steps h2{      !избыточен-еренесен в общий h2!
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #AE7C78;
+}
+*/
+
+/*.steps dt{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+     color: #AE7C78;
+
+.steps dd{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #AE7C78;
+}
+}*/
+/*.news h2 {    !избыточен-еренесен в общий h2!
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #AE7C78;
+}*/
+.news p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #AE7C78;
+}
+
+/*.comments h2{     !избыточен-еренесен в общий h2!
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #AE7C78;
+}*/
+
+.comments blockquote{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #AE7C78;
+}
+
+.comments cite {
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*.map h2{      !избыточен-еренесен в общий h2!
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #AE7C78;
+}*/
+
+.map p:nth-child(odd){
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #AE7C78;
+}
+
+.map p:nth-child(even){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #AE7C78;
+}
+.popular-slider a,
+footer a{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style-type: none;
 }
