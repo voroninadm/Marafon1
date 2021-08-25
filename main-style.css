@@ -2,7 +2,10 @@
     display: none;
 }
 
-.page-header { /*Разметка и стили шапки страницы */
+body{
+    background-color: #E5E5E5;
+}
+.page-header { /*Разметка и стили шапки*/
     display: grid;
     grid-template-rows: 60px;
     margin-top: 27px;
@@ -32,10 +35,10 @@
 .main-nav a{ /* Стиль ссылок в навигации*/
     text-decoration: none;
     color: #AE7C78;
-
 }
 
-.start-container{
+.start-container{ /*Разметка и стили стартового блока*/
+
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -44,7 +47,7 @@
     color: #AE7C78;
 }
 
-.start-container h1{ /*Главный заголовок */
+.start-container h1{ /*Главный заголовок */;
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
@@ -52,8 +55,18 @@
     line-height: 59px;
     color: #AE7C78;
 }
-.start-container span{ /* курсивная часть заголовка*/
+.start-container span{ /* курсив  в заголовке*/
     font-style: italic;
+}
+.start-container a,
+.popular-slider a{
+    text-decoration: none;
+    background-color:#D89999;
+    color: #FFFFFF;
+    Font-family: Montserrat;
+    Font-style: Regular;
+    Font-size: 16px;
+    Line-height: 20px;
 }
 h2{ /* Стили для всех заголовков h2*/
     font-family: Playfair Display;
@@ -114,7 +127,45 @@ h2{ /* Стили для всех заголовков h2*/
     line-height: 29px;
     color: #AE7C78;
 }
-.catalog h3{
+/* Разметка каталога*/
+.catalog{ /* Разметка контейнера*/
+    width: 1200px;
+    height: 442px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 19px;
+    margin:auto;
+    text-align: center;
+}
+
+.catalog .wedding-bouquet{ /* Разметка 1 колонки*/
+    display: flex;
+    flex-direction: column;
+    height: 442px;
+    width:387px;
+    background: url("./img/catalog1.png") no-repeat;
+    text-align: center;
+}
+
+.catalog .pion-bouquet{ /* Разметка 2 колонки*/
+    display: flex;
+    flex-direction: column;
+    height: 442px;
+    width:387px;
+    background: url("./img/catalog2.png") no-repeat;
+    text-align: center;
+}
+
+.catalog .choose_bouquet { /* Разметка 3 колонки*/
+    display: flex;
+    flex-direction: column;
+    height: 442px;
+    width: 387px;
+    background: url("./img/catalog3.png") no-repeat;
+    text-align: center;
+}
+
+.catalog h3{ /* Стили заголовков*/
     font-family: Playfair Display;
     font-size: 36px;
     font-style: normal;
@@ -123,19 +174,23 @@ h2{ /* Стили для всех заголовков h2*/
     letter-spacing: 0.02em;
     text-align: center;
     color: black;
-    /*color:#FFFFFF;*/
+    color:#FFFFFF;
 }
 
-.catalog p{
+.catalog p{ /* Стили заголовков*/
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: black;
-    /*color: #FFFFFF;*/
-}
+    color: #FFFFFF;
+}/* Конец разметки каталога*/
 
+
+.discount{
+    background-color: #AE7C78;
+}
 .discount p{
     font-family: Playfair Display;
     font-style: normal;
@@ -143,6 +198,7 @@ h2{ /* Стили для всех заголовков h2*/
     font-size: 44px;
     line-height: 59px;
     letter-spacing: 0.02em;
+    color: #FFFFFF
 }
 .discount p:last-of-type{
     font-family: Montserrat;
@@ -150,6 +206,7 @@ h2{ /* Стили для всех заголовков h2*/
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
+    color: #FFFFFF
 }
 
 /*
@@ -200,7 +257,7 @@ h2{ /* Стили для всех заголовков h2*/
     color: #AE7C78;
 }
 
-/*.comments h2{     !избыточен-еренесен в общий h2!
+/*.comments h2{     !избыточен-перенесен в общий h2!
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
@@ -259,7 +316,7 @@ h2{ /* Стили для всех заголовков h2*/
     color: #AE7C78;
 }
 .popular-slider a,
-footer a{
+.page-footer a{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -267,8 +324,17 @@ footer a{
     line-height: 20px;
     text-align: center;
     text-decoration: none;
+    color: #FFFFFF;
 }
+
+.page-footer{
+    background-color: #AE7C78;
+
+}
+
 
 footer ul{
     list-style-type: none;
+    text-decoration: none;
+
 }
