@@ -5,18 +5,16 @@
     <meta name="description" content="Авторские букеты с доствакой по всему Питеру">
     <meta name="keywords" content="букеты, цветы, авторские, оригинальные, доставка, Питер, Санкт-Петербург">
     <title>Авторские букеты в Петербурге</title>
-    <link rel="stylesheet" href="main-style.css">
-    <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display,=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
 <header class="page-header">
     <nav>
-    <!--    <a href="#"><img src="img/Лого.svg" alt="to main page" width="100" height="33"></a>-->
-        <ul class="main-nav">
+        <ul class="link-nav">
             <li><a href="#">Каталог</a> </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">Отзывы</a></li>
@@ -30,25 +28,38 @@
 <main>
 
     <section class="start-container">
-        <h1>Авторские букеты <span>в Петербурге</span></h1>
-        <p>Оригинальные свежие букеты с доставкой по всему городу</p>
-        <a href="#">Смотреть каталог</a>
+        <div class="start-title">
+            <h1 class="reset-line">Авторские букеты <span>в Петербурге</span></h1>
+            <p>Оригинальные свежие букеты с доставкой по всему городу</p>
+            <a href="#">Смотреть каталог</a>
+        </div>
         <img src="img/flower1.png" alt="pink bouquet" width="386" height="388">
         <img src="img/flowers2.png" alt="white-pink roses bouquet" width="387" height="404">
     </section>
 
     <section class="benefits">
         <h2 class="visually-hidden">Наши приемущества</h2>
+        <div class="benefit-block fast-service">
+            <img src="img/delivery_icon.svg" alt="fast-car" width="82" height="52">
         <dl>
             <dt>Быстрая доставка</dt>
             <dd>Можем собрать букет и передать его в доставку всего за час.</dd>
+        </dl>
+        </div>
+        <div class="benefit-block freshness">
+        <dl>
+            <img src="img/flower_icon.svg" alt="flower-in-vase" width="52" height="52">
             <dt>Всегда всежие цветы</dt>
             <dd>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</dd>
+        </dl>
+        </div>
+        <div class="benefit-block photo_making">
+            <img src="img/photo_icon.svg" alt="camera" width="59" height="52">
+        <dl>
             <dt>Отправляем фото цветов</dt>
             <dd>Перед доставкой сделаем фотографию букета и отправим вам.</dd>
-            <img src="img/delivery_icon.svg" alt="fast-car" width="82" height="52">
-            <img src="img/flower_icon.svg" alt="flower-in-vase" width="52" height="52">
-            <img src="img/photo_icon.svg" alt="camera" width="59" height="52">
+        </dl>
+        </div>
         </dl>
     </section>
 

@@ -2,12 +2,18 @@
     display: none;
 }
 
+.reset-line{
+    margin:0;
+    padding: 0;
+}
+
+
 body{
     background-color: #E5E5E5;
 }
 
 h2{ /* Стили для всех заголовков h2*/
-    font-family: Playfair Display;
+    font-family: Playfair Display, "Baskerville Old Face", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -23,33 +29,35 @@ h2{ /* Стили для всех заголовков h2*/
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
 
-    font-family: Montserrat;
+    font-family: Montserrat, "Times New Roman", sans-serif;
     font-weight: 400;
     align-items: center;
-    font-family: Montserrat;
     font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: #AE7C78;
 }
 
-.main-nav{ /* Разметка блока навигации */
-    margin:0;
+.link-nav{ /* Разметка блока навигации */
     display:flex;
+    margin:0;
     justify-content: space-around;
     align-items:  center;
     list-style-type: none;
 }
 
-.main-nav a{ /* Стиль ссылок в навигации*/
+.link-nav a{ /* Стиль ссылок в навигации*/
     text-decoration: none;
     color: #AE7C78;
 }/* Окончание стилей шапки*/
 
 /*Стартовый блок*/
 .start-container{ /*Разметка и стили стартового блока*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1200px;
+    margin: 0 120px 0 120px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -57,6 +65,10 @@ h2{ /* Стили для всех заголовков h2*/
     font-size: 24px;
     line-height: 29px;
     color: #AE7C78;
+}
+
+.start-title h1{
+    margin-top: 81px;
 }
 
 .start-container h1{ /*Главный заголовок */;
@@ -67,18 +79,41 @@ h2{ /* Стили для всех заголовков h2*/
     line-height: 59px;
     color: #AE7C78;
 }
+
 .start-container span{ /* курсив  в заголовке*/
     font-style: italic;
 }
+
 .start-container a, /* стили ссылок*/
 .popular-slider a{
-    text-decoration: none;
-    background-color:#D89999;
-    color: #FFFFFF;
     Font-family: Montserrat;
     Font-style: Regular;
     Font-size: 16px;
     Line-height: 20px;
+    margin-top: 94px;
+
+    text-decoration: none;
+    background-color:#D89999;
+    color: #FFFFFF;
+    box-shadow: ;
+
+}
+
+.start-container img:first-of-type{
+    margin-top: 140px;
+}
+
+.start-container img:last-of-type{
+    margin-top: 82px;
+}
+
+/* Окончание стартового блока */
+.benefits{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 48px 120px 0 120px;
+    justify-content: center;
+    align-items: center;
 }
 
 .steps dt,
@@ -103,6 +138,14 @@ h2{ /* Стили для всех заголовков h2*/
     letter-spacing: 0em;
     text-align: left;
     color:#AE7C78;
+} /*Окончание блока приемушеств */
+
+.popular-slider{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    width: 794px;
+    margin: 0 323px 0 323px;
 }
 
 .popular-slider h3{ /*Заголовок в слайдере */
@@ -233,6 +276,14 @@ h2{ /* Стили для всех заголовков h2*/
     font-size: 24px;
     line-height: 29px;
     color: #AE7C78;
+}
+
+.comments{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1200px;
+    border: 1px solid #AE7C78;
+    margin: auto;
 }
 
 .comments blockquote{
